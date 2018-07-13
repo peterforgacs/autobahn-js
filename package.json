@@ -10,16 +10,16 @@
     "node": ">= 4.2.6"
   },
   "dependencies": {
-    "crypto-js": ">= 3.1.8",
-    "msgpack5": ">= 3.6.0",
-    "cbor": ">= 3.0.0",
-    "tweetnacl": ">= 0.14.3",
-    "when": ">= 3.7.7",
-    "ws": ">= 1.1.4"
+    "crypto-js": "3.1.8",
+    "msgpack5": "4.2.0",
+    "cbor": "4.1.0",
+    "tweetnacl": "1.0.0",
+    "when": "3.7.8",
+    "ws": "5.2.2"
   },
   "optionalDependencies": {
-    "bufferutil": ">= 1.2.1",
-    "utf-8-validate": ">= 1.2.1"
+    "bufferutil": "3.0.5",
+    "utf-8-validate": "5.0.1"
   },
   "devDependencies": {
     "browserify": ">= 13.1.1",
