@@ -14,11 +14,8 @@ default:
 # Cleanup targets
 #
 clean:
-	sudo rm -rf build
-
-dist_clean: clean
-	sudo rm -rf ./node_modules
-	sudo rm -f .sconsign.dblite
+	-sudo rm -rf ./build ./node_modules
+	-sudo rm -f .sconsign.dblite
 
 
 #
@@ -80,8 +77,7 @@ publish_browser:
 	git -C ../autobahn-js-browser pull
 	cp ./build/* ../autobahn-js-browser/
 	cp ./build/* ../crossbar-examples/_shared-web-resources/autobahn/
-	cp ./build/* ../crossbar/crossbar/templates/default/web/js/
-	@echo "Now commit and push these repos: autobahn-js-browser, crossbar"
+	@echo "Now commit and push these repos: autobahn-js-browser, crossbar-examples"
 
 publish_npm: build_npm
 	npm publish
